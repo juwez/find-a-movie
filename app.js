@@ -4,9 +4,9 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const indexRouter = require('./routes/index');
-const actorRouter = require('./controller/actor');
-const genreRouter = require('./controller/genre');
-const movieRouter = require('./controller/movie');
+const actorRouter = require('./controller/actorController');
+const genreRouter = require('./controller/genreController');
+const movieRouter = require('./controller/movieController');
 const app = express();
 
 // view engine setup
