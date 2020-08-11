@@ -1,7 +1,5 @@
 let db = require("../data/shared/connection")
-async function getall(){
 
+module.exports={
 }
-async function insert(){
 
-}
