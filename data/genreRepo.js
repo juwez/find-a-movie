@@ -1,7 +1,11 @@
 let db = require("../data/shared/connection")
 async function getAll() {
-    return await db.query("select * from genres");
+    let query = await db.query("SELECT NAME FROM genres");
+    return query;
 }
+
+
+
 module.exports={
-    getAll:getAll()
+    getAll:getAll
 }
