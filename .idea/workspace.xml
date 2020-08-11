@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93f01a88-a52a-42b5-9721-8ed1ed310d96" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Mappings/FilterMapping.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/filterRepo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/filterController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/filterController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/genreRepo.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/genreRepo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/movieRepo.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/movieRepo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parameters" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +84,7 @@
       <workItem from="1596835189291" duration="519000" />
       <workItem from="1596996588703" duration="10000" />
       <workItem from="1597128675549" duration="2195000" />
-      <workItem from="1597131275493" duration="20482000" />
+      <workItem from="1597131275493" duration="28973000" />
     </task>
     <task id="LOCAL-00001" summary="changed var to const everywhere&#10;and deleted users.js">
       <created>1595686549625</created>
@@ -115,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597161504992</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="refactored names">
+      <created>1597162721880</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1597162721880</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,7 +140,8 @@
     <MESSAGE value="added sql connection.js and made controllers no logic in the controllers yet" />
     <MESSAGE value="getall genres" />
     <MESSAGE value="getall actors is implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="getall actors is implemented" />
+    <MESSAGE value="refactored names" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactored names" />
   </component>
   <component name="WindowStateProjectService">
     <state x="533" y="215" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597154256959">
@@ -138,10 +152,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="450" y="149" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1594569767731" />
-    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1597161504148">
+    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1597162720969">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1597161504148" />
+    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1597162720969" />
     <state width="468" height="466" key="DebuggerActiveHint" timestamp="1597160460818">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -222,10 +236,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1597160120373" />
-    <state x="362" y="146" key="Vcs.Push.Dialog.v2" timestamp="1597161508449">
+    <state x="362" y="146" key="Vcs.Push.Dialog.v2" timestamp="1597162733194">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="362" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1597161508449" />
+    <state x="362" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1597162733194" />
     <state x="94" y="94" width="1349" height="637" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1597151038042">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

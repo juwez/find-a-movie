@@ -7,6 +7,7 @@ const indexRouter = require('./routes/index');
 const actorRouter = require('./controller/actorController');
 const genreRouter = require('./controller/genreController');
 const movieRouter = require('./controller/movieController');
+const filterRouter = require('./controller/filterController');
 const app = express();
 
 // view engine setup
@@ -19,8 +20,9 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/api/movies/',movieRouter);
-app.use('/api/actors/',actorRouter)
-app.use('/api/genres/',genreRouter)
+app.use('/api/actors/',actorRouter);
+app.use('/api/genres/',genreRouter);
+app.use('/api/filters/',filterRouter);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
