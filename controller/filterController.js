@@ -3,7 +3,7 @@ const router = express.Router();
 const filterRepo = require('../data/filterRepo');
 
 router.get("/", async (req, res) => {
-        let filters = await filterRepo.getAllFilters()
+        let filters = await filterRepo.getFiltersFromDB()
         return res.send(
             {filters:filters})
             .status(200);

@@ -1,5 +1,5 @@
 let db = require("../shared/connection");
-let updateGenres = "INSERT INTO genres(id,name) VALUES ?";
+let updateGenres = "INSERT INTO genres(id,genre) VALUES ?";
 let genres = [
     ["1","Thriller"],
     ["2","Drama"],

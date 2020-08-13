@@ -1,12 +1,10 @@
 async function mapGenres(row) {
-    let genres=[]
-    let i;
-    for (i = 0; i < row.length; i++) {
-        genres[i]=row[i].NAME
+    let genres = []
+    for (let i = 0; i < row.length; i++) {
+
+        genres[i] = row[i].genre
     }
-return {
-        genres
-    }
+    return await genres
 }
 
 module.exports = {mapGenres: mapGenres}

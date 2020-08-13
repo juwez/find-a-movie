@@ -1,22 +1,10 @@
-async function mapFilter(row1, row2) {
-    async function retrieveMappingData(row) {
-        let i;
-        let j = 0;
-        for (i = 0; i < row.length; i++) {
-            if (row[i] !== "columnname") {
-                console.log(row[i]);
-                filters[j] = row[i].column_name
-                j++
-            }
-        }
-    }
-
+async function mapFilters(row) {
     let filters = []
-    await retrieveMappingData(row1)
-    await retrieveMappingData(row2)
-    return {
-        filters
+    for (let i = 0; i < row.length; i++) {
+        filters[i] = row[i]["column_name"]
     }
+    return await filters
+
 }
 
-module.exports = {mapFilter: mapFilter}
+module.exports = {mapFilters: mapFilters}
