@@ -7,6 +7,7 @@
 const app = require('../app');
 const debug = require('debug')('03-nodejs:server');
 const http = require('http');
+let {seedAllTables, truncateAllTables} = require("../controller/seedController")
 
 /**
  * Get port from environment and store in Express.
@@ -20,7 +21,8 @@ app.set('port', port);
  */
 
 const server = http.createServer(app);
-
+//first we truncate all tables in the DB then we seed them
+truncateAllTables().then(seedAllTables())
 /**
  * Listen on provided port, on all network interfaces.
  */

@@ -3,7 +3,6 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
-
 const indexRouter = require('./routes/index');
 const actorRouter = require('./controller/actorController');
 const genreRouter = require('./controller/genreController');
@@ -11,6 +10,7 @@ const movieRouter = require('./controller/movieController');
 const filterRouter = require('./controller/filterController');
 const cors = require("cors");
 const app = express();
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -26,6 +26,10 @@ app.use('/api/movies/',movieRouter);
 app.use('/api/actors/',actorRouter);
 app.use('/api/genres/',genreRouter);
 app.use('/api/filters/',filterRouter);
+
+//seed the db
+
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
