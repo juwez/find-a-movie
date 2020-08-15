@@ -4,7 +4,7 @@ async function mapGenres(row) {
 
         genres[i] = row[i].genre
     }
-    return await genres
+    return genres
 }
 
 module.exports = {mapGenres: mapGenres}

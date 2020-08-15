@@ -3,7 +3,7 @@ async function mapFilters(row) {
     for (let i = 0; i < row.length; i++) {
         filters[i] = row[i]["column_name"]
     }
-    return await filters
+    return filters
 
 }
 
