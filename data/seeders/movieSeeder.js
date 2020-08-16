@@ -14,7 +14,7 @@ let movies = [
 ]
 
 async function seedMovieTable() {
-    await db.query(updateMovies, [movie])
+    await db.query(updateMovies, [movies])
 }
 async function truncateMovieTable() {
     await db.query("TRUNCATE TABLE movies")
