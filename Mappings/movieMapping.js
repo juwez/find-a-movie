@@ -1,5 +1,13 @@
-async function mapYears(row) {
+async function mapAllMovies(row){
     console.log(row)
+    let movies = []
+    for (let i = 0; i < row.length; i++) {
+        movies[i] = row[i]
+    }
+    return movies;
+
+}
+async function mapYears(row) {
     let years = []
     for (let i = 0; i < row.length; i++) {
         years[i] = row[i].year
@@ -8,7 +16,6 @@ async function mapYears(row) {
 }
 
 async function mapMetascore(row) {
-    console.log(row)
     let metascore = []
     for (let i = 0; i < row.length; i++) {
         metascore[i] = row[i].metascore
@@ -18,5 +25,6 @@ async function mapMetascore(row) {
 
 module.exports = {
     mapYears: mapYears,
-    mapMetascore: mapMetascore
+    mapMetascore: mapMetascore,
+    mapAllMovies:mapAllMovies
 }
