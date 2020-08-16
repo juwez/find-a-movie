@@ -13,7 +13,7 @@ let movies = [
     ["10", "Source Code", "2011", "74", "A soldier wakes up in someone else's body and discovers he's part of an experimental government program to find the bomber of a commuter train within 8 minutes."],
 ]
 
-async function seedMovieTable(updateMovies, movie) {
+async function seedMovieTable() {
     await db.query(updateMovies, [movie])
 }
 async function truncateMovieTable() {

@@ -17,7 +17,7 @@ let moviesActors = [
     ["9","5"],
     ["10","11"],
 ]
-async function seedMoviesActorsTable(updateMoviesActors, moviesActors) {
+async function seedMoviesActorsTable() {
     await db.query(updateMoviesActors, [moviesActors])
 }
 async function truncateMoviesActorsTable() {

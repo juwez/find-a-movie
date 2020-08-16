@@ -13,7 +13,7 @@ let genres = [
     ["10","Action"],
     ]
 
-async function seedGenreTable(updateGenres, genres) {
+async function seedGenreTable() {
     await db.query(updateGenres, [genres])
 }
 async function truncateGenreTable() {

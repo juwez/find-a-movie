@@ -14,8 +14,8 @@ let actors = [
     ["11","Jake Gyllenhaal"],
     ]
 
-async function seedActorsTable(updateActors, actors) {
-    await db.query(updateActors, [actors])
+async function seedActorsTable() {
+    await db.query(updateActor, [actors])
 }
 async function truncateActorsTable(){
   await  db.query("TRUNCATE TABLE actors")

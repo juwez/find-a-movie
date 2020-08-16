@@ -29,7 +29,7 @@ let moviesGenres = [
     ["10","10"],
 ]
 
-async function seedMovieGenreTable(updateMoviesGenres, moviesGenres) {
+async function seedMovieGenreTable() {
     await db.query(updateMoviesGenres, [moviesGenres])
 }
 async function truncateMovieGenreTable() {
