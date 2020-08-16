@@ -1,5 +1,4 @@
 async function mapAllMovies(row){
-    console.log(row)
     let movies = []
     for (let i = 0; i < row.length; i++) {
         movies[i] = row[i]

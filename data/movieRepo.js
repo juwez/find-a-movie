@@ -41,12 +41,6 @@ async function getAll(actor, genre, year, metascore) {
         }
         whereString +=` metascore="${metascore}" `
     }
-    console.log("select title,year,metascore,plot,actor,genre\n" +
-        "from movies\n" +
-        "left join movies_actors ma on movies.id = ma.movie_id\n" +
-        "left join actors a on ma.actor_id = a.id\n" +
-        "left join movies_genres mg on movies.id = mg.movie_id\n" +
-        "left join genres g on mg.genre_id = g.id"+whereString)
     return mapping.mapAllMovies(await db.query("select title,year,metascore,plot,actor,genre\n" +
         "from movies\n" +
         "left join movies_actors ma on movies.id = ma.movie_id\n" +

@@ -1,15 +1,14 @@
+
 const express = require('express');
 const router = express.Router();
+const fs = require('fs');
+
+let readMe = fs.readFileSync('./textDir/endpointLogs.txt', 'utf8').split('\n');
+
 /* GET home page. */
-/*
-let urls = [];
-router.get("*", async (req, res) => {
-    let currentVistedUrl = req.url;
-    urls.push(currentVistedUrl);
-    next();
-);
- */
+
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+    let endpoints = fs.readFileSync('./textDir/endpointLogs.txt', 'utf8').split('\n');
+    res.render('index', { title: 'MovieRecommender',endpoints:endpoints});
 });
 module.exports = router;

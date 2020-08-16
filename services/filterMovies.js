@@ -8,7 +8,6 @@ async function filterMovies(actor, genre, year, metascore) {
     let movies= movieRepo.getAll(actor, genre, year, metascore)
     return movies
 }
-
 module.exports =
     {
         filterMovies: filterMovies
